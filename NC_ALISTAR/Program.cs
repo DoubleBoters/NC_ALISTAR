@@ -13,7 +13,7 @@ namespace NC_ALISTAR
     class Program
     {
 
-        public static int version = 01;
+        public static int version = 2;
 
         public static Spell.Active Q;
         public static Spell.Targeted W;
@@ -112,11 +112,10 @@ namespace NC_ALISTAR
 
         private static void OnTick(EventArgs args)
         {
+            _FarmQ();
+
             if (Orbwalker.ActiveModesFlags == Orbwalker.ActiveModes.Combo)
                 _Combo();
-
-            if (Orbwalker.ActiveModesFlags == Orbwalker.ActiveModes.LaneClear || Orbwalker.ActiveModesFlags == Orbwalker.ActiveModes.LastHit)
-                _FarmQ();
 
             if (autoE["autoE"].Cast<CheckBox>().CurrentValue && (_Player.ManaPercent >= autoE["allyHPMana"].Cast<Slider>().CurrentValue))
                 _HealAlly();
