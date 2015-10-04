@@ -8,4 +8,3 @@ C:\Users\tomas\Documents\Visual Studio 2015\Projects\Pr0Teemo\NC_ALISTAR\NC_ALIS
 C:\Users\tomas\Documents\Visual Studio 2015\Projects\Pr0Teemo\NC_ALISTAR\NC_ALISTAR\bin\Debug\Newtonsoft.Json.dll
 C:\Users\tomas\Documents\Visual Studio 2015\Projects\Pr0Teemo\NC_ALISTAR\NC_ALISTAR\obj\Debug\NC_ALISTAR.exe
 C:\Users\tomas\Documents\Visual Studio 2015\Projects\Pr0Teemo\NC_ALISTAR\NC_ALISTAR\obj\Debug\NC_ALISTAR.pdb
-C:\Users\tomas\Documents\Visual Studio 2015\Projects\Pr0Teemo\NC_ALISTAR\NC_ALISTAR\obj\Debug\NC_ALISTAR.csprojResolveAssemblyReference.cache
