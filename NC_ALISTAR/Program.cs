@@ -13,7 +13,7 @@ namespace NC_ALISTAR
     class Program
     {
 
-        public static int version = 12;
+        public static int version = 01;
 
         public static Spell.Active Q;
         public static Spell.Targeted W;
@@ -116,7 +116,7 @@ namespace NC_ALISTAR
 
             menu = MainMenu.AddMenu("[NC] Alitar", "alistar");
             menu.AddGroupLabel("[NC] Alistar");
-            menu.AddLabel("~=~ NECEK ~=~");
+            menu.AddLabel("= x22necek, i love poland. =");
 
             drawMenu = menu.AddSubMenu("Draw Settings", "drawsettings");
             drawMenu.AddGroupLabel("Draw Settings");
