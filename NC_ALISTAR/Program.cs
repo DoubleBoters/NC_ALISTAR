@@ -155,11 +155,11 @@ namespace NC_ALISTAR
             if (!(t != null))
                 return;
 
-            if (Q.IsReady() && Q.IsInRange(t) && !_Player.IsZombie)
+            if (Q.IsReady() && Q.IsInRange(t))
             {
                 Q.Cast();
             }
-            else if (W.IsReady() && W.IsInRange(t) && !_Player.IsZombie && Q.IsReady())
+            else if (W.IsReady() && W.IsInRange(t) && Q.IsReady())
             {
                 W.Cast(t);
                 if (Q.IsInRange(t))
