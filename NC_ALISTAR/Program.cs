@@ -13,6 +13,8 @@ namespace NC_ALISTAR
     class Program
     {
 
+        public static int version = 12;
+
         public static Spell.Active Q;
         public static Spell.Targeted W;
         public static Spell.Active E;
@@ -110,7 +112,7 @@ namespace NC_ALISTAR
 
         private static void _Menu()
         {
-            Chat.Print("<font color='#2fcbff'>[NECEK-CARRY]</font><font color='#b9ebe3'> Alistar loaded, have fun!</font>");
+            Chat.Print("<font color='#2fcbff'>[NECEK-CARRY]</font><font color='#b9ebe3'> Alistar loaded, have fun! Version: </font>" + version);
 
             menu = MainMenu.AddMenu("[NC] Alitar", "alistar");
             menu.AddGroupLabel("[NC] Alistar");
