@@ -65,6 +65,8 @@ namespace NC_ALISTAR
             if (sender.IsMe && !(miscMenu["stopULT"].Cast<CheckBox>().CurrentValue))
                 return;
 
+            //Chat.Print(args.SData.Name);
+
             if (args.SData.Name.Equals("LuxMaliceCannon") || args.SData.Name.Equals("LuxMaliceCannonMis") && miscMenu["stopULTLux"].Cast<CheckBox>().CurrentValue)
             {
                 if (Q.IsReady() && Q.IsInRange(sender))
@@ -74,6 +76,17 @@ namespace NC_ALISTAR
 
             }
             else if (args.SData.Name.Equals("EzrealTrueshotBarrage") && miscMenu["stopULTEzreal"].Cast<CheckBox>().CurrentValue)
+            {
+                if (Q.IsReady() && Q.IsInRange(sender))
+                {
+                    Q.Cast();
+                }
+                else if (W.IsReady() && W.IsInRange(sender))
+                {
+                    W.Cast(sender);
+                }
+            }
+            else if (args.SData.Name.Equals("KatarinaR") && miscMenu["stopULTEKatarina"].Cast<CheckBox>().CurrentValue)
             {
                 if (Q.IsReady() && Q.IsInRange(sender))
                 {
@@ -141,7 +154,7 @@ namespace NC_ALISTAR
             miscMenu.AddGroupLabel("Break ult");
             miscMenu.Add("stopULT", new CheckBox("Break dangerous ult", true));
             miscMenu.AddLabel("Check dangerous ult");
-            miscMenu.Add("stopULTKatarina", new CheckBox("Katarina ULT -- momentarily disabled", true));
+            miscMenu.Add("stopULTKatarina", new CheckBox("Katarina ULT", true));
             miscMenu.Add("stopULTEzreal", new CheckBox("Ezreal ULT", true));
             miscMenu.Add("stopULTLux", new CheckBox("Lux ULT", true));
             miscMenu.AddSeparator();
